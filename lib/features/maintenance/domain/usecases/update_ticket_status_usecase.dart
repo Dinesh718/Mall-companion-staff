@@ -1,0 +1,1 @@
+import '../repositories/maintenance_repository.dart'; class UpdateTicketStatusUseCase { final MaintenanceRepository repository; UpdateTicketStatusUseCase({required this.repository}); Future<void> call(String id, String status) async { await repository.updateTicketStatus(id, status); } }

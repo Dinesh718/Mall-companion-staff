@@ -1,0 +1,1 @@
+import '../entities/ticket_details_entity.dart'; import '../repositories/maintenance_repository.dart'; class GetTicketDetailsUseCase { final MaintenanceRepository repository; GetTicketDetailsUseCase({required this.repository}); Future<TicketDetailsEntity> call(String id) async { return await repository.getTicketDetails(id); } }
